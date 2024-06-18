@@ -1,10 +1,16 @@
 /* src/index.css */
 
 body {
-  font-family: Arial, sans-serif;
+  @font-face {
+    font-family: GalleryModern;
+    src: url("./assets/GalleryModern.otf")format('opentype');
+    
+  }
+  font-style: italic;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor:url('assets/animal_aquatic_wildlife_fish_swordfish_icon_209467.svg') 0 0, auto;
 }
 
 .header {
@@ -51,11 +57,14 @@ body {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  cursor: pointer;
+  cursor:url("./assets/animal_aquatic_wildlife_fish_swordfish_icon_209467.svg")  0 0, pointer;
 }
 
 .wine-card:hover {
-  transform: translateY(-15px);
+  transform: scale(1.18);
+  transition: transform 0.5s ease;
+  background-color: #052D3A;
+  cursor:url("./assets/animal_aquatic_wildlife_fish_swordfish_icon_209467.svg")  0 0, pointer;
 }
 
 .wine-card img {
@@ -75,6 +84,7 @@ body {
 .wine-card p {
   color: #666;
   margin: 5px 0;
+  font-weight: bold;
 }
 
 .wine-details {
@@ -135,7 +145,7 @@ body {
   background-color: #3498db;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor:url("./assets/animal_aquatic_wildlife_fish_swordfish_icon_209467.svg")  0 0, auto;
   transition: background-color 0.3s;
 }
 
@@ -168,6 +178,13 @@ body {
 
   .wine-card {
     width: calc(50% - 20px); 
+  }
+
+  .wine-card:hover {
+    transform: scale(1.18);
+    transition: transform 0.5s ease;
+    background-color: #052D3A;
+    
   }
 }
 
